@@ -1,6 +1,7 @@
 import { Montserrat } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar'; // Adjust the path if needed
+import Navbar from '@/components/global/Navbar'; // Adjust the path if needed
+import Footer from '@/components/global/Footer'; // Adjust the path if needed
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${montserrat.variable}`}>
       <body className="antialiased">
         <Navbar />
-        <main className="pt-20">{children}</main>{' '}
+        <main className="pt-16">{children}</main> <Footer />
         {/* Push content below navbar */}
       </body>
     </html>
