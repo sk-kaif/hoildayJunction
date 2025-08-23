@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -38,6 +39,9 @@ const Navbar = () => {
             <a href="#gallery" className="text-gray-700 hover:text-blue-600 ">
               Gallery
             </a>
+            <Link href="/blogs" className="text-gray-700 hover:text-blue-600 ">
+              Blogs
+            </Link>
             <a href="#contact" className="text-gray-700 hover:text-blue-600">
               Contact
             </a>
@@ -133,6 +137,13 @@ const Navbar = () => {
           >
             Gallery
           </a>
+          <Link
+            href="/Link"
+            onClick={() => setIsOpen(false)}
+            className="text-gray-700 hover:text-blue-600 "
+          >
+            Gallery
+          </Link>
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}

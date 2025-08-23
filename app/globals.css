@@ -11,3 +11,14 @@ html {
 body {
   font-family: var(--font-montserrat);
 }
+
+.blogContent {
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.blogTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
