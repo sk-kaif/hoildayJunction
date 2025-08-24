@@ -1,172 +1,3 @@
-// 'use client';
-
-// import { useRef, useState } from 'react';
-// import emailjs from '@emailjs/browser';
-
-// const ContactSection = () => {
-//   const formRef = useRef();
-//   const [loading, setLoading] = useState(false);
-//   const [sent, setSent] = useState(false);
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-//     setLoading(true);
-
-//     emailjs
-//       .sendForm(
-//         'your_service_id', // Replace with your actual service ID
-//         'your_template_id', // Replace with your actual template ID
-//         formRef.current,
-//         'your_public_key' // Replace with your public key
-//       )
-//       .then(
-//         () => {
-//           setSent(true);
-//           setLoading(false);
-//           formRef.current.reset();
-//         },
-//         (error) => {
-//           console.error('FAILED...', error);
-//           setLoading(false);
-//         }
-//       );
-//   };
-
-//   return (
-//     <div className="px-4 py-12 max-w-[1200px] mx-auto">
-//       <div className="grid md:grid-cols-2 gap-10">
-//         {/* LEFT: Contact Form */}
-//         <div>
-//           <h2 className="text-3xl font-bold mb-4">
-//             Contact us with questions about MotoDiscovery Tours or Training
-//             events?
-//           </h2>
-//           <p className="mb-4 text-gray-700">
-//             Please let us know how we can help by sending us a quick e-mail. No
-//             question is too small. We’ll respond promptly. Thank you! You can
-//             also visit our{' '}
-//             <a href="#" className="text-red-500 underline">
-//               FAQs
-//             </a>
-//             .
-//           </p>
-
-//           <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
-//             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-//               <input
-//                 name="first_name"
-//                 type="text"
-//                 required
-//                 placeholder="First Name"
-//                 className="border p-2 rounded w-full"
-//               />
-//               <input
-//                 name="city_name"
-//                 type="text"
-//                 required
-//                 placeholder="city name"
-//                 className="border p-2 rounded w-full"
-//               />
-//             </div>
-//             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-//               <input
-//                 name="phone"
-//                 type="tel"
-//                 placeholder="Phone Number"
-//                 className="border p-2 rounded w-full"
-//               />
-//               <input
-//                 name="email"
-//                 type="email"
-//                 required
-//                 placeholder="Email Address"
-//                 className="border p-2 rounded w-full"
-//               />
-//             </div>
-//             <textarea
-//               name="message"
-//               required
-//               rows="5"
-//               placeholder="Your Message"
-//               className="border p-2 rounded w-full"
-//             />
-//             <button
-//               type="submit"
-//               disabled={loading}
-//               className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
-//             >
-//               {loading ? 'Sending...' : 'SUBMIT'}
-//             </button>
-//             {sent && (
-//               <p className="text-green-600 mt-2">Your message has been sent!</p>
-//             )}
-//           </form>
-//         </div>
-
-//         {/* RIGHT: Map & Contact Info */}
-// <div className="space-y-6">
-//   {/* Google Map Embed */}
-//   <div className="w-full h-64 md:h-80 rounded overflow-hidden">
-//     <iframe
-//       className="w-full h-full"
-//       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.050251897845!2d-98.63114978488303!3d29.480672755292274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf52f56b01325%3A0xf3ad70f3cd1b4c78!2s2903%20Larkwood%20Dr%2C%20San%20Antonio%2C%20TX%2078209%2C%20USA!5e0!3m2!1sen!2sin!4v1668274247082!5m2!1sen!2sin"
-//       allowFullScreen=""
-//       loading="lazy"
-//       referrerPolicy="no-referrer-when-downgrade"
-//     ></iframe>
-//   </div>
-
-//   {/* Contact Info */}
-//   <div className="grid sm:grid-cols-2 gap-6 text-sm text-gray-800">
-//     <div>
-//       <p>
-//         <strong>Siggi Ragnar</strong> (Managing Partner)
-//       </p>
-//       <a href="mailto:siggi@motodiscovery.com" className="text-red-500">
-//         siggi@motodiscovery.com
-//       </a>
-//       <br />
-//       <a href="tel:+12108492082">+(210) 849 2082</a>
-//     </div>
-//     <div>
-//       <p>
-//         <strong>Anna Heichelheim</strong> (Office Manager)
-//       </p>
-//       <a href="mailto:anna@motodiscovery.com" className="text-red-500">
-//         anna@motodiscovery.com
-//       </a>
-//       <br />
-//       <a href="tel:+12108492084">+(210) 849-2084</a>
-//     </div>
-//     <div>
-//       <p>
-//         <strong>Skip Mascorro</strong> (Founder)
-//       </p>
-//       <a href="mailto:skip@motodiscovery.com" className="text-red-500">
-//         skip@motodiscovery.com
-//       </a>
-//       <br />
-//       <a href="tel:+12105578471">+(210) 557-8471</a>
-//     </div>
-//     <div>
-//       <p>
-//         <strong>MotoDiscovery</strong>
-//       </p>
-//       <p>
-//         2903 Larkwood Dr.
-//         <br />
-//         San Antonio, TX 78209 USA
-//       </p>
-//     </div>
-//   </div>
-// </div>
-//   </div>
-//     </div>
-//   );
-// };
-
-// export default ContactSection;
-
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -231,10 +62,7 @@ const ContactSection = () => {
   }, [sent]);
 
   return (
-    <main
-      id="contact"
-      className="scroll-mt-7 bg-gradient-to-br from-blue-900 to-blue-600"
-    >
+    <main id="contact" className="scroll-mt-7 BlueBG">
       <div className="max-w-[1200px] mx-auto w-[90%] py-12 md:py-16">
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="bg-white rounded-md  shadow-lg px-7 pt-7 pb-10">
@@ -310,7 +138,7 @@ const ContactSection = () => {
                 className={`w-full cursor-pointer py-4 px-6 rounded-md font-semibold text-white transition-all transform   ${
                   loading
                     ? 'bg-gray-400 cursor-not-allowed'
-                    : 'bg-gradient-to-br from-blue-900 to-blue-600 border-1 border-black shadow-lg hover:shadow-xl'
+                    : 'BlueBG border-1 border-black shadow-lg hover:shadow-xl'
                 }`}
               >
                 {loading ? 'Sending...' : 'SUBMIT'}

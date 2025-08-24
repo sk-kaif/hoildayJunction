@@ -1,3 +1,9 @@
+import { MdLocationPin } from 'react-icons/md';
+
+import { FaPhoneAlt } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-700 border-t">
@@ -41,6 +47,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
+              <Link href="/blogs" className="hover:text-blue-600">
+                Blogs
+              </Link>
+            </li>
+            <li>
               <a href="#contact" className="hover:text-blue-600">
                 Contact
               </a>
@@ -52,9 +63,15 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold mb-3">Contact Us</h2>
           <ul className="space-y-2 text-sm">
-            <li>📍 Mumbai, India</li>
-            <li>📞 +91 98765 43210</li>
-            <li>✉️ support@mysite.com</li>
+            <li className="flex items-center gap-2">
+              <MdLocationPin size={18} /> Mumbai, India
+            </li>
+            <li className="flex items-center gap-2">
+              <FaPhoneAlt size={18} /> +91 98765 43210
+            </li>
+            <li className="flex items-center gap-2">
+              <AiOutlineMail size={18} /> support@mysite.com
+            </li>
           </ul>
         </div>
       </div>
