@@ -26,3 +26,10 @@ body {
 .BlueBG {
   background: linear-gradient(to bottom right, #1e3a8a, #2563eb);
 }
+
+.homeHero {
+  background-image: url('../public/holidayAssets/IMG-20250824-WA0011.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
