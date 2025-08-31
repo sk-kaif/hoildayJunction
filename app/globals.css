@@ -28,8 +28,80 @@ body {
 }
 
 .homeHero {
-  background-image: url('../public/holidayAssets/IMG-20250824-WA0011.jpg');
+  /* background-image: url('../public/holidayAssets/IMG-20250824-WA0011.jpg'); */
+  background-image: url('../public/holidayAssets/phoneHomeBg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out forwards;
+}
+
+.tw-like {
+  /* bg-gradient-to-r from-blue-500 to-blue-600 */
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+
+  /* text-white */
+  color: #ffffff;
+
+  /* shadow-lg shadow-blue-500/25 */
+  box-shadow:
+    0 10px 15px -3px rgba(59, 130, 246, 0.25),
+    0 4px 6px -4px rgba(59, 130, 246, 0.25);
+}
+.tw-like:hover {
+  /* hover:from-blue-600 hover:to-blue-700 */
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+
+  /* hover:shadow-blue-600/25 */
+  box-shadow:
+    0 10px 15px -3px rgba(37, 99, 235, 0.25),
+    0 4px 6px -4px rgba(37, 99, 235, 0.25);
+}
+
+.tail-input {
+  /* w-full */
+  width: 100%;
+
+  /* px-4 py-3 pl-10 */
+  padding: 0.75rem 1rem; /* py-3 px-4 */
+  padding-left: 2.5rem; /* pl-10 */
+
+  /* border border-gray-300 */
+  border: 1px solid #d1d5db;
+
+  /* rounded-lg */
+  border-radius: 0.5rem;
+
+  /* outline-none */
+  outline: none;
+
+  /* transition-all duration-200 */
+  transition: all 0.2s;
+}
+
+/* focus:ring-2 focus:ring-blue-500 focus:border-transparent */
+.tail-input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6; /* ring-2 ring-blue-500 */
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .homeHero {
+    background-image: url('../public/holidayAssets/IMG-20250824-WA0011.jpg');
+  }
 }

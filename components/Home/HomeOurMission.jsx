@@ -1,17 +1,10 @@
-'use client';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const HomeOurMission = () => {
   return (
     <main className=" max-w-[1200px] mx-auto w-[90%] py-12 lg:py-16">
       <div className="">
-        <motion.div
-          className=" md:flex justify-center "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2.5, duration: 1 }}
-        >
+        <div className=" md:flex justify-center ">
           <h1 className="flex-1 text-4xl md:text-[48px] md:leading-14 font-bold pb-5 md:pb-0">
             Our Mission & Values
           </h1>
@@ -23,7 +16,7 @@ const HomeOurMission = () => {
             comfortable, secure, and friendly journey for every passenger,
             emphasizing safety, punctuality, and customer satisfaction.
           </p>
-        </motion.div>
+        </div>
 
         <Image
           src="/home/ourmissonBanner.webp"
