@@ -77,7 +77,7 @@ export default function Testimonials() {
         >
           {testimonials.map((t, idx) => (
             <SwiperSlide key={idx} className="h-full">
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden text-black h-full flex flex-col min-h-[340px]">
+              <div className="bg-white  shadow-sm overflow-hidden text-black h-full flex flex-col min-h-[340px]">
                 {/* Header with Gradient */}
                 <div className="BlueBG h-[120px] relative">
                   <img

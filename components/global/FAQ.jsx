@@ -109,7 +109,7 @@ export default function FAQ() {
                   opacity: isOpen ? 1 : 0,
                 }}
               >
-                <div className="mt-2 text-gray-700 text-sm md:text-base pr-4 pb-4 md:pb-0">
+                <div className="mt-2 text-gray-700 text-sm md:text-base pr-4 mb-4 md:pb-0">
                   {faq.answer}
                 </div>
               </div>

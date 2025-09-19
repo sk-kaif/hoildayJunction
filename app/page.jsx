@@ -21,18 +21,20 @@ const page = () => {
       {/* <HeroSection /> */}
       <OfferPopup />
       <HomeHero />
-      <HomeOurMission />
-      <HomeOurServices />
-      <TrustedRideSection />
       <HomePopularCars />
-      <Gallery />
-      <TravelQuoteForm />
       <ShuttleOptions />
+
+      <TravelQuoteForm />
+      <HomeOurMission />
+
+      <Gallery />
       <Testimonials />
+      <TrustedRideSection />
       <FAQ />
       <Advert />
-      <ContactSection />
+
       <WhatsAppButton />
+      {/* <HomeOurServices /> */}
     </div>
   );
 };

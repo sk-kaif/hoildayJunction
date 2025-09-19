@@ -320,7 +320,7 @@ const vehicleOptions = [
     name: 'Tempo Traveller',
     image: '/vechicals/tempo-traveller.jpg',
     seats: ['13', '17', '20', '26'],
-    photos: ['/vechicals/car.jpg', '/vechicals/tempo-traveller.jpg'],
+    photos: ['/vechicals/17TT.jpg', '/vechicals/tempo-traveller.jpg'],
   },
   {
     id: 'mini-bus',
@@ -350,7 +350,7 @@ const VehicleCard = ({ vehicle }) => {
   const uniqueNext = `next-${vehicle.id}`;
 
   return (
-    <div className="group bg-white border border-gray-200 hover:border-gray-500 rounded cursor-pointer overflow-hidden transition-all duration-300 shadow-sm hover:shadow-lg">
+    <div className="group bg-white border border-gray-200 hover:border-gray-500  cursor-pointer overflow-hidden transition-all duration-300 shadow-sm hover:shadow-lg">
       <div className="relative w-full h-56 md:h-64 overflow-hidden">
         {/* Swiper inside VehicleCard */}
         <Swiper

@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 items-center">
+          <div className="hidden md:flex space-x-6 items-center desktop-menuMain">
             <button
               onClick={() => handleScroll('services')}
               className="text-gray-700 hover:text-blue-600 font-medium"
@@ -52,7 +52,7 @@ const Navbar = () => {
             </button>
             <button
               onClick={() => handleScroll('price')}
-              className="text-white shadow-sm rounded-3xl hover:text-black bg-blue-600 py-1.5 px-3"
+              className="text-white shadow-sm  hover:text-black bg-blue-600 py-1.5 px-3 hover:rounded-3xl transition-all duration-300 "
             >
               Price
             </button>
@@ -65,12 +65,9 @@ const Navbar = () => {
             <Link href="/blogs" className="text-gray-700 hover:text-blue-600">
               Blogs
             </Link>
-            <button
-              onClick={() => handleScroll('contact')}
-              className="text-gray-700 hover:text-blue-600"
-            >
+            <Link href="/contact" className="text-gray-700 hover:text-blue-600">
               Contact
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -165,12 +162,9 @@ const Navbar = () => {
           >
             Blogs
           </Link>
-          <button
-            onClick={() => handleScroll('contact')}
-            className="text-gray-700 hover:text-blue-600"
-          >
+          <Link href="/contact" className="text-gray-700 hover:text-blue-600">
             Contact
-          </button>
+          </Link>
         </div>
       </div>
 

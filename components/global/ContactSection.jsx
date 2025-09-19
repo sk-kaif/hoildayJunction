@@ -166,7 +166,7 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6 text-sm text-white">
+            {/* <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6 text-sm text-white">
               <div>
                 <p>
                   <strong>Siggi Ragnar</strong> (Managing Partner)
@@ -216,7 +216,7 @@ const ContactSection = () => {
                   San Antonio, TX 78209 USA
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

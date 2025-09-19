@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const words = [
-  'School Bus Services',
+  'School Bus Contracts',
   'Corporate Pickup & Drop',
   'Car & Bus Rentals',
   'Long Distance Trips',

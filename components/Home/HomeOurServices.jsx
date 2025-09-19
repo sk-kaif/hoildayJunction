@@ -83,7 +83,7 @@ const HomeOurServices = () => {
         >
           {expertiseData.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="group text-center rounded overflow-hidden shadow-lg bg-gray-900 cursor-pointer transform transition-transform duration-300 hover:scale-105 h-[400px] flex flex-col">
+              <div className="group text-center  transition-all duration-300 overflow-hidden shadow-lg bg-gray-900 cursor-pointer transform  hover:scale-105 h-[400px] flex flex-col">
                 <div className="relative h-72 w-full overflow-hidden">
                   <Image
                     src={item.image}

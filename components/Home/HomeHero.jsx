@@ -59,13 +59,13 @@ export default function HomeHero() {
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <a
             href="tel:+919619657785"
-            className="text-center bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition"
+            className="text-center bg-white text-blue-900 font-semibold px-6 py-3 hover:rounded-3xl transition-all duration-300 shadow-md hover:bg-gray-100 "
           >
             Call Us
           </a>
           <a
             href="#price"
-            className="text-center bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition"
+            className="text-center bg-transparent border border-white text-white font-semibold px-6 py-3  hover:bg-white hover:text-blue-900  hover:rounded-3xl transition-all duration-300"
           >
             Get a Price
           </a>
