@@ -469,35 +469,53 @@ import { X } from 'lucide-react';
 const galleryData = [
   {
     category: '4 seater',
-    images: [
-      '/holidayAssets/Frame8New.jpg',
-      '/holidayAssets/Frame9New.jpg',
-      '/holidayAssets/Frame10New.jpg',
-    ],
+    images: ['/holidayAssets/Frame8New.jpg'],
   },
   {
     category: '7 - 8 seater',
-    images: ['/holidayAssets/resize.jpg'],
+    images: ['/allresize/17Seater-1.jpg'],
   },
   {
     category: '13 seater',
-    images: ['/vechicals/dummyGallery.png'],
+    images: ['/allresize/17Seater-1.jpg'],
   },
   {
     category: '17 - 20 seater',
-    images: ['/vechicals/dummyGallery.png'],
+    images: [
+      '/allresize/17Seater-1.jpg',
+      '/allresize/20Seater-1.jpg',
+      '/allresize/20Seater-2.jpg',
+      '/allresize/20Seater-3.jpg',
+    ],
   },
   {
     category: '26 seater',
-    images: ['/vechicals/dummyGallery.png'],
+    images: [
+      '/allresize/20Seater-4.jpg',
+      '/allresize/20Seater-5.jpg',
+      '/allresize/20Seater-6.jpg',
+      '/allresize/20Seater-7.jpg',
+      '/allresize/20Seater-8.jpg',
+    ],
   },
   {
     category: '35 - 37 seater',
-    images: ['/vechicals/dummyGallery.png'],
+    images: [
+      '/allresize/30Seater-1.jpg',
+      '/allresize/35Seater-2.jpg',
+      '/allresize/40Seater-1.jpg',
+      '/allresize/40Seater-2.jpg',
+      '/allresize/40Seater-3.jpg',
+    ],
   },
   {
     category: '45 - 47 seater',
-    images: ['/vechicals/dummyGallery.png'],
+    images: [
+      '/allresize/30Seater-1.jpg',
+      '/allresize/40Seater-4.jpg',
+      '/allresize/40Seater-5.jpg',
+      '/allresize/56Seater-1.jpg',
+    ],
   },
 ];
 
@@ -587,7 +605,7 @@ const Gallery = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4">
           <div className="relative max-w-3xl w-full text-center">
             <button
-              className="absolute top-2 right-2 text-white text-3xl hover:text-gray-300 bg-blue-600 rounded-full p-1 cursor-pointer"
+              className="absolute top-[-20px] md:top-[-60px] right-2 text-white text-3xl hover:text-gray-300 bg-blue-600 rounded-full p-1 cursor-pointer"
               onClick={() => setPopupData(null)}
             >
               <X size={26} />

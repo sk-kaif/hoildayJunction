@@ -23,7 +23,7 @@ const HomeOurMission = () => {
           alt="Our Mission"
           width={1200}
           height={800}
-          className="mt-8 w-full h-auto object-cover rounded-md shadow-lg"
+          className="mt-8 w-full h-auto object-cover  shadow-lg"
         />
       </div>
     </main>

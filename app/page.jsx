@@ -18,23 +18,23 @@ import React from 'react';
 const page = () => {
   return (
     <div>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <OfferPopup />
-      <HomeHero />
+      {/* <HomeHero /> */}
       <HomePopularCars />
       <ShuttleOptions />
+      <Gallery />
 
       <TravelQuoteForm />
       <HomeOurMission />
 
-      <Gallery />
       <Testimonials />
       <TrustedRideSection />
       <FAQ />
       <Advert />
 
       <WhatsAppButton />
-      {/* <HomeOurServices /> */}
+      <HomeOurServices />
     </div>
   );
 };

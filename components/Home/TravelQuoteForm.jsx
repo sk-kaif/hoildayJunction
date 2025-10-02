@@ -1834,9 +1834,9 @@ const TravelQuoteForm = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-md shadow-lg p-6 md:p-8">
+        <div className="bg-white  shadow-lg p-6 md:p-8">
           {/* Debug info - remove this in production */}
-          <div className="mb-4 p-2 bg-gray-100 rounded text-sm">
+          {/* <div className="mb-4 p-2 bg-gray-100  text-sm">
             <p>
               Debug: Current seats value: <strong>{formData.seats}</strong>
             </p>
@@ -1844,7 +1844,7 @@ const TravelQuoteForm = () => {
               URL:{' '}
               {typeof window !== 'undefined' ? window.location.href : 'N/A'}
             </p>
-          </div>
+          </div> */}
 
           {/* Trip Type */}
           <div className="flex flex-wrap gap-4 mb-8">
@@ -1853,9 +1853,9 @@ const TravelQuoteForm = () => {
               onClick={() =>
                 setFormData((prev) => ({ ...prev, tripType: 'round-trip' }))
               }
-              className={`px-4 py-2 rounded-md font-medium transition-colors cursor-pointer ${
+              className={`px-4 py-2  font-medium transition-colors cursor-pointer ${
                 formData.tripType === 'round-trip'
-                  ? 'bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md'
+                  ? 'bg-blue-500 text-white font-semibold px-6 py-3  shadow-md'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -1866,9 +1866,9 @@ const TravelQuoteForm = () => {
               onClick={() =>
                 setFormData((prev) => ({ ...prev, tripType: 'one-way' }))
               }
-              className={`px-4 py-2 rounded-md font-medium transition-colors cursor-pointer ${
+              className={`px-4 py-2  font-medium transition-colors cursor-pointer ${
                 formData.tripType === 'one-way'
-                  ? 'bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md'
+                  ? 'bg-blue-500 text-white font-semibold px-6 py-3  shadow-md'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -1892,7 +1892,7 @@ const TravelQuoteForm = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Enter your full name"
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-500  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                   required
                 />
               </div>
@@ -1911,7 +1911,7 @@ const TravelQuoteForm = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder="e.g. 9876543210"
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-500  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                   required
                 />
               </div>
@@ -1933,7 +1933,7 @@ const TravelQuoteForm = () => {
                   value={formData.from}
                   onChange={handleInputChange}
                   placeholder="e.g. Mumbai, Maharashtra"
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-500  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                   required
                 />
               </div>
@@ -1952,7 +1952,7 @@ const TravelQuoteForm = () => {
                   value={formData.to}
                   onChange={handleInputChange}
                   placeholder="e.g. Lonavala, Maharashtra"
-                  className="w-full px-4 py-3 border border-gray-500 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-500  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                   required
                 />
               </div>
@@ -1975,7 +1975,7 @@ const TravelQuoteForm = () => {
                     value={formData.startDate}
                     onChange={handleInputChange}
                     min={new Date().toISOString().split('T')[0]}
-                    className="w-full px-4 py-3 border border-gray-500 rounded-md  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 border border-gray-500   focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                     required
                   />
                   {/* <Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 pointer-events-none" /> */}
@@ -2001,7 +2001,7 @@ const TravelQuoteForm = () => {
                         formData.startDate ||
                         new Date().toISOString().split('T')[0]
                       }
-                      className="w-full px-4 py-3 border border-gray-500 rounded-md  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-500   focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       required={formData.tripType === 'round-trip'}
                     />
                     {/* <Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 pointer-events-none" /> */}
@@ -2023,7 +2023,7 @@ const TravelQuoteForm = () => {
                 name="seats"
                 value={formData.seats}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-500 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-500  focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                 required
               >
                 <option value="4">4 Seater</option>
@@ -2109,7 +2109,7 @@ const TravelQuoteForm = () => {
             {/* Status Alert */}
             {submitStatus && (
               <div
-                className={`fixed bottom-6 right-6 max-w-sm flex items-center gap-3 p-4 rounded-xl shadow-lg border transition-all transform
+                className={`fixed bottom-6 right-6 max-w-sm flex items-center gap-3 p-4  shadow-lg border transition-all transform
       ${
         submitStatus.includes('successfully')
           ? 'bg-green-600 text-white border-green-700 animate-slide-in'
@@ -2166,7 +2166,7 @@ const TravelQuoteForm = () => {
                 type="button"
                 onClick={handleSubmit}
                 disabled={isSubmitting}
-                className={`w-full cursor-pointer py-4 px-6 rounded-md font-semibold text-white transition-all transform ${
+                className={`w-full cursor-pointer py-4 px-6  font-semibold text-white transition-all transform ${
                   isSubmitting
                     ? 'bg-gray-400 cursor-not-allowed'
                     : 'BlueBG border-1 border-black shadow-lg hover:shadow-xl'

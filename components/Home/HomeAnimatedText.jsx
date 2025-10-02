@@ -38,7 +38,7 @@ const HomeAnimatedText = () => {
   return (
     <div>
       <motion.p
-        className="text-2xl md:text-3xl font-mono h-10 text-center"
+        className="text-2xl md:text-3xl font-mono h-10 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}

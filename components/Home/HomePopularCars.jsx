@@ -742,8 +742,7 @@ const cars = [
   {
     name: 'Sedan',
     type: 'Car',
-    image: '/home/vehicals/eco.jpg',
-
+    image: '/vechicals/car.jpg',
     transmission: 'Manual',
     Seater: '4',
     perKm: '₹12',
@@ -755,7 +754,7 @@ const cars = [
   {
     name: 'SUV',
     type: 'Car',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/suv.webp',
     transmission: 'Manual',
     Seater: '7-8',
     perKm: '₹15',
@@ -779,7 +778,7 @@ const cars = [
   {
     name: 'Tempo Traveller',
     type: 'Mini Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/17.webp',
     transmission: 'Manual',
     Seater: '17',
     perKm: '₹25',
@@ -791,7 +790,7 @@ const cars = [
   {
     name: 'Tempo Traveller',
     type: 'Mini Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/20R.webp',
     transmission: 'Manual',
     Seater: '20',
     perKm: '₹27',
@@ -803,7 +802,7 @@ const cars = [
   {
     name: 'Tempo Traveller',
     type: 'Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/26.webp',
     transmission: 'Manual',
     Seater: '26',
     perKm: '₹36',
@@ -815,7 +814,7 @@ const cars = [
   {
     name: 'Eicher',
     type: 'Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/32.webp',
     transmission: 'Manual',
     Seater: '28-32',
     perKm: '₹40',
@@ -827,7 +826,7 @@ const cars = [
   {
     name: 'Eicher',
     type: 'Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/37.webp',
 
     transmission: 'Manual',
     Seater: '33-35',
@@ -840,7 +839,7 @@ const cars = [
   {
     name: 'Eicher',
     type: 'Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/37.webp',
 
     transmission: 'Manual',
     Seater: '35-37',
@@ -853,7 +852,7 @@ const cars = [
   {
     name: 'Eicher',
     type: 'Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/49.png',
     transmission: 'Manual',
     Seater: '45-49',
     perKm: '₹60',
@@ -865,7 +864,7 @@ const cars = [
   {
     name: 'Eicher',
     type: 'Bus',
-    image: '/home/vehicals/eco.jpg',
+    image: '/vechicals/49.png',
     transmission: 'Manual',
     Seater: '58',
     perKm: '₹65',
