@@ -975,7 +975,7 @@ export default function HomePopularCars() {
 
                   <p className="text-gray-400 text-xs py-1 tooltip">
                     DA Permit : {car.dapermit}
-                    <span class="tooltip-text">
+                    <span className="tooltip-text">
                       DA Permit is a government-approved certificate that gives
                       a driver the authority to legally and safely operate
                       passengers in a commercial/rental vehicle.

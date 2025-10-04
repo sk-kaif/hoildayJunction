@@ -316,48 +316,60 @@ import 'swiper/css/navigation';
 
 const vehicleOptions = [
   {
+    id: 'car',
+    name: 'Car',
+    image: '/vechicals/car.jpg',
+    seats: ['4', '6', '7'],
+    photos: [
+      '/allresize/4Seater-2.jpg',
+      '/allresize/7Seater-3.jpg',
+      '/allresize/7Seater-4.jpg',
+    ],
+  },
+  {
     id: 'tempo-traveller',
     name: 'Tempo Traveller',
     image: '/vechicals/tempo-traveller.jpg',
     seats: ['13', '17', '20', '26'],
     photos: [
-      '/vechicals/17TT.jpg',
-      '/vechicals/tempo-traveller.jpg',
+      '/allresize/13Seater-6.jpg',
       '/allresize/17Seater-1.jpg',
-    ],
-  },
-  {
-    id: 'mini-bus',
-    name: 'Mini Bus',
-    image: '/vechicals/mini-bus.jpg',
-    seats: ['27', '29', '32', '35'],
-    photos: [
+      '/allresize/17Seater-1.jpg',
       '/allresize/20Seater-1.jpg',
-      '/allresize/20Seater-2.jpg',
       '/allresize/20Seater-4.jpg',
-      '/allresize/20Seater-10.jpg',
-      '/vechicals/mini-bus.jpg',
-      '/vechicals/tempo-traveller.jpg',
+      // '/allresize/13Seater-1.jpg',
+      // '/allresize/13Seater-5.jpg',
+      //
     ],
   },
+  // {
+  //   id: 'mini-bus',
+  //   name: 'Mini Bus',
+  //   image: '/vechicals/mini-bus.jpg',
+  //   seats: ['27', '29', '32', '35'],
+  //   photos: [
+  //     // '/allresize/20Seater-1.jpg',
+  //     // '/allresize/20Seater-2.jpg',
+  //     // '/allresize/20Seater-4.jpg',
+  //     // '/allresize/20Seater-10.jpg',
+  //     // '/vechicals/mini-bus.jpg',
+  //     '/vechicals/tempo-traveller.jpg',
+  //   ],
+  // },
   {
     id: 'bus',
     name: 'Bus',
     image: '/vechicals/bus.jpg',
     seats: ['37', '40', '45', '49'],
     photos: [
-      '/allresize/30Seater-1.jpg',
       '/allresize/35Seater-2.jpg',
+      '/allresize/40Seater-4.jpg',
       '/allresize/40Seater-5.jpg',
-      '/allresize/56Seater-2.jpg',
+      // '/allresize/30Seater-1.jpg',
+      // '/allresize/35Seater-2.jpg',
+      // '/allresize/40Seater-5.jpg',
+      // '/allresize/56Seater-2.jpg',
     ],
-  },
-  {
-    id: 'car',
-    name: 'Car',
-    image: '/vechicals/car.jpg',
-    seats: ['4', '6', '7'],
-    photos: ['/vechicals/car.jpg', '/vechicals/tempo-traveller.jpg'],
   },
 ];
 

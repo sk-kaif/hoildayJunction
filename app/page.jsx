@@ -23,9 +23,10 @@ const page = () => {
       {/* <HomeHero /> */}
       <HomePopularCars />
       <ShuttleOptions />
-      <Gallery />
-
       <TravelQuoteForm />
+      <Gallery />
+      <HomeOurServices />
+
       <HomeOurMission />
 
       <Testimonials />
@@ -34,7 +35,6 @@ const page = () => {
       <Advert />
 
       <WhatsAppButton />
-      <HomeOurServices />
     </div>
   );
 };

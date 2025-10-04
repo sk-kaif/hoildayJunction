@@ -11,20 +11,20 @@ const HeroSection = () => {
     >
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 leading-tight ">
               Your Trusted <span className="text-black">Ride Partner</span>
             </h1>
             <HomeAnimatedText />
-            <p className="text-xl md:text-2xl py-5 mb-8 text-blue-100 leading-relaxed">
+            <p className="text-xl md:text-xl py-5 mb-8 text-blue-100 leading-relaxed">
               We are committed to providing safe, reliable, and affordable
               transportation solutions for all your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="#price"
-                className="text-center md:text-left bg-yellow-400 text-gray-900 px-8 py-4  font-semibold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg"
+                className="text-center md:text-left bg-white text-gray-900 px-8 py-4  font-semibold text-lg  transition-all transform hover:scale-105 shadow-lg hover:bg-transparent hover:text-white border-2 border-white"
               >
                 Book Now & Save 15%
               </Link>

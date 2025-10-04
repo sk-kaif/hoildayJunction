@@ -469,15 +469,32 @@ import { X } from 'lucide-react';
 const galleryData = [
   {
     category: '4 seater',
-    images: ['/holidayAssets/Frame8New.jpg'],
+    images: [
+      '/allresize/4Seater-1.jpg',
+      '/allresize/4Seater-2.jpg',
+      '/allresize/4Seater-3.jpg',
+    ],
   },
   {
     category: '7 - 8 seater',
-    images: ['/allresize/17Seater-1.jpg'],
+    images: [
+      '/allresize/7Seater-1.jpg',
+      '/allresize/7Seater-2.jpg',
+      '/allresize/7Seater-3.jpg',
+      '/allresize/7Seater-4.jpg',
+      '/allresize/7Seater-5.jpg',
+      '/allresize/7Seater-6.jpg',
+      '/allresize/7Seater-7.jpg',
+    ],
   },
   {
     category: '13 seater',
-    images: ['/allresize/17Seater-1.jpg'],
+    images: [
+      '/allresize/13Seater-1.jpg',
+      '/allresize/13Seater-3.jpg',
+      '/allresize/13Seater-5.jpg',
+      '/allresize/13Seater-6.jpg',
+    ],
   },
   {
     category: '17 - 20 seater',
@@ -493,9 +510,9 @@ const galleryData = [
     images: [
       '/allresize/20Seater-4.jpg',
       '/allresize/20Seater-5.jpg',
-      '/allresize/20Seater-6.jpg',
       '/allresize/20Seater-7.jpg',
-      '/allresize/20Seater-8.jpg',
+      // '/allresize/20Seater-8.jpg',
+      '/allresize/20Seater-6.jpg',
     ],
   },
   {
